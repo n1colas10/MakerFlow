@@ -1,0 +1,54 @@
+@import url('./index.css');
+
+nav{display: flex; flex-direction: row; align-items: center; gap: 10px; padding-left: 20px; padding-right: 20px;}
+.nav-logo{display:flex; align-items:center; gap: 1em;cursor:pointer; text-decoration: none;}
+.nav-logo-img{max-height: 80px; max-width: auto; height: 1; width: auto; margin-top: 10px; margin-bottom: 10px;}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1}
+.nav-logo-main{font-family:var(--cond);font-size:1.3rem;font-weight:900;color:#fff;letter-spacing:3px}
+.nav-logo-sub{font-family:var(--mono);font-size:.52rem;color:var(--text-dim);letter-spacing:1.5px;text-transform:uppercase;margin-top:1px}
+.nav-div{width:1px;height:28px;background:var(--border-l)}
+.nav-links{display:flex;gap:.1rem;flex:1}
+.nav-btn{font-family:var(--mono);font-size:.7rem;color:var(--text-dim);background:none;border:none;padding:.45rem 1rem;cursor:pointer;text-transform:uppercase;letter-spacing:1.5px;transition:all .2s;border-bottom:1px solid transparent;margin-bottom:-1px; text-decoration: none;}
+.nav-btn:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.nav-btn.active{color:#fff;border-color:#fff}
+.nav-right{margin-left:auto;display:flex;gap:.8rem;align-items:center}
+.nav-user{font-family:var(--mono);font-size:.65rem;color:var(--text-dim);letter-spacing:1px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.role-badge{font-family:var(--mono);font-size:.58rem;padding:.15rem .5rem;border:1px solid var(--border-l);text-transform:uppercase;letter-spacing:1px}
+.role-badge.admin{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.08)}
+.role-badge.membro{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.6)}
+.role-badge.visitante{border-color:var(--border);color:var(--text-dim)}
+
+#menu-b{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu-b.active{
+    rotate: 90deg;
+}
+
+.nav-menu{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: -500px;
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+}
+
+.nav-menu.ativo{
+    top: 100px;
+}
+
+.menu-btn{width: 100%;font-family:var(--mono);font-size:.7rem;color:var(--text-dim);background:none;border:none;padding:1rem 1rem;cursor:pointer;text-transform:uppercase;letter-spacing:1.5px;transition:all .2s;border-bottom:1px solid transparent;margin-bottom:-1px}
+.menu-btn:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.menu-btn.active{color:#fff;border-color:#fff}

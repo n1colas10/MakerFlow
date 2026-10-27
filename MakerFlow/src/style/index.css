@@ -54,6 +54,7 @@ textarea{resize:vertical;min-height:90px}
 .suc-msg{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--mono);font-size:.72rem;padding:.6rem 1rem;margin-bottom:1rem;display:none}
 .divider{display:flex;align-items:center;gap:.8rem;margin:1.2rem 0;color:var(--text-dim);font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:1px}
 .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.pass-span{font-family: var(--mono); font-size: 8pt; color: rgba(255,130,130,.9);}
 
 /* PASSWORD TOGGLE */
 .pass-wrap{position:relative}
